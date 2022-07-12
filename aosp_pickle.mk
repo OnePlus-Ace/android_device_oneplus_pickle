@@ -28,12 +28,10 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := pickle
 PRODUCT_NAME := aosp_pickle
-PRODUCT_BRAND := Oneplus
+PRODUCT_BRAND := oneplus
 PRODUCT_MODEL := PGKM10
-PRODUCT_MANUFACTURER := Oneplus
+PRODUCT_MANUFACTURER := oneplus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_CHARACTERISTICS := nosdcard
-
-USE_CN_AGPS := true

@@ -18,8 +18,8 @@
 
 set -e
 
-export DEVICE=chopin
-export VENDOR=xiaomi
+export DEVICE=pickle
+export VENDOR=oneplus
 
 INITIAL_COPYRIGHT_YEAR=2021
 
@@ -40,7 +40,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
 # Copyright headers and guards
-write_headers "chopin"
+write_headers "pickle"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

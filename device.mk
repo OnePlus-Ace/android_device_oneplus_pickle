@@ -15,7 +15,6 @@
 #
 
 DEVICE_PATH := device/oneplus/pickle
-CHOPIN_PREBUILT := device/oneplus/pickle-prebuilts
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -28,9 +27,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
-# Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/xiaomi/chopin/chopin-vendor.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
